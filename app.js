@@ -51,6 +51,7 @@ const onChange = (ev) => {
                 alert("존재하지 않는 유저입니다");
             }
             else{
+                button.disabled = true;
                 const link = `https://github.com/${Value}.png`;
                 const rink = `https://github.com/${Value}`;
                 let img = document.createElement('img');
