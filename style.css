@@ -160,6 +160,7 @@ img:hover{
     border:0;
     cursor: pointer;background: linear-gradient(to right, rgb(26, 255, 5), rgb(47, 213, 255));
     border-radius: 18vw;
+    margin-bottom: 5vh;
 }
 .secondBTN:hover{
     transition: ease-in-out 0.1s;
