@@ -42,7 +42,11 @@ const onChange = (ev) => {
 
     }
     try{
-        fetch(`https://api.github.com/users/${Value}/repos`).then(res=>res.json())
+        fetch(`https://api.github.com/users/${Value}/repos`,{
+            headers: {
+                Authorization: "token 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",
+            }, 
+        }).then(res=>res.json())
         .then(json=>{
             console.log(json);
             Length = json.length;
