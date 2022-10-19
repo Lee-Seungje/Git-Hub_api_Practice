@@ -1,8 +1,12 @@
 const input = document.querySelector(".input");
-const button = document.querySelector("button");
+const button = document.querySelector(".BTN");
 const body = document.querySelector("body");
 const user = document.querySelector(".user");
 const main = document.querySelector(".Main");
+const secondBTN = document.querySelector(".secondBTN");
+secondBTN.addEventListener("click", ()=>{
+    button.disabled = false;
+})
 let Length = 0;
 const onChange = (ev) => {
     const Value = input.value;
@@ -12,7 +16,7 @@ const onChange = (ev) => {
             console.log(json);
             Length = json.length;
             console.log(Length);
-            if(Length == 0){
+            if(Length == 0 || json.message == 'Not Found'){
                 alert("존재하지 않는 유저입니다");
             }
             else{

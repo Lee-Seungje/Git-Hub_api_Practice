@@ -150,3 +150,22 @@ img:hover{
     height:18vw;
     border-radius: 18vw;
 }
+.secondBTN{
+    width:5vw;
+    height:4vh;
+    border-radius:3vw;
+    outline: none;
+    font-family: 'Cafe24Ssurround';
+    box-shadow: 0px 0px 23px -15px rgb(0, 0, 0);
+    border:0;
+    cursor: pointer;background: linear-gradient(to right, rgb(26, 255, 5), rgb(47, 213, 255));
+    border-radius: 18vw;
+}
+.secondBTN:hover{
+    transition: ease-in-out 0.1s;
+    width:100vw;
+    height:4.5vh;
+    box-shadow: 0px 0px 23px -15px rgb(0, 0, 0);
+    background: linear-gradient(to left, rgb(26, 255, 5), rgb(33, 255, 181));
+    border-radius: 18vw;
+}
