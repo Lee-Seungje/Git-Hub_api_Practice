@@ -6,7 +6,14 @@ const main = document.querySelector(".Main");
 const secondBTN = document.querySelector(".secondBTN");
 secondBTN.addEventListener("click", ()=>{
     button.disabled = false;
+    removeAllchild(user);
+    removeAllchild(main);
 })
+function removeAllchild(div) {
+    while (div.hasChildNodes()) {
+        div.removeChild(div.firstChild);
+    }
+}
 let Length = 0;
 const onChange = (ev) => {
     const Value = input.value;
