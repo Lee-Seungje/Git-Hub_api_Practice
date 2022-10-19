@@ -39,6 +39,7 @@ const onChange = (ev) => {
                     List.addEventListener("click", () => {
                         location = json[i].html_url;
                     })
+                    button.disabled = true;
                 }
             }
         })
