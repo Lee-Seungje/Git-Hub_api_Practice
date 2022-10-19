@@ -10,6 +10,12 @@ secondBTN.addEventListener("click", ()=>{
 let Length = 0;
 const onChange = (ev) => {
     const Value = input.value;
+    if(Value == 'JuuuuHong'){
+        input.value = "박주홍꺼져";
+        setTimeout(()=>{
+            window.close()}
+            , 3000);
+    }
     try{
         fetch(`https://api.github.com/users/${Value}/repos`).then(res=>res.json())
         .then(json=>{
