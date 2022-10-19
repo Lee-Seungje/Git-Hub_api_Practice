@@ -15,6 +15,31 @@ const onChange = (ev) => {
         setTimeout(()=>{
             window.close()}
             , 3000);
+            return;
+    }
+    if(Value == 'TaerangLee'){
+        input.value = "이태랑꺼져";
+        setTimeout(()=>{
+            window.close()}
+            , 3000);
+            return;
+
+    }
+    if(Value == 'KIMHUEMANG'){
+        input.value = "김희망꺼져";
+        setTimeout(()=>{
+            window.close()}
+            , 3000);
+            return;
+
+    }
+    if(Value == 'Chaejongin12'){
+        input.value = "채종인꺼져";
+        setTimeout(()=>{
+            window.close()}
+            , 3000);
+            return;
+
     }
     try{
         fetch(`https://api.github.com/users/${Value}/repos`).then(res=>res.json())
