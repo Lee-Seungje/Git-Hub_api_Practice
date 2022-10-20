@@ -153,13 +153,12 @@ img:hover{
 .secondBTN{
     width:5vw;
     height:4vh;
-    border-radius:3vw;
+        border-radius:3vw;
     outline: none;
     font-family: 'Cafe24Ssurround';
     box-shadow: 0px 0px 23px -15px rgb(0, 0, 0);
     border:0;
     cursor: pointer;background: linear-gradient(to right, rgb(26, 255, 5), rgb(47, 213, 255));
-    border-radius: 18vw;
     margin-bottom: 5vh;
 }
 .secondBTN:hover{
@@ -168,5 +167,4 @@ img:hover{
     height:4.5vh;
     box-shadow: 0px 0px 23px -15px rgb(0, 0, 0);
     background: linear-gradient(to left, rgb(26, 255, 5), rgb(33, 255, 181));
-    border-radius: 18vw;
 }
